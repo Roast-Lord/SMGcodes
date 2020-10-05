@@ -14,5 +14,5 @@ function [x] = Gauss(A,b)
         b(L)=b(L)-b(DIG)*PIVO;
     end
 end
-X = SubstituicAoRegressivA(A,b)
+%X = SubstituicAoRegressivA(A,b)
 end
