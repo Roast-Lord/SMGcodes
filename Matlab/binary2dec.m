@@ -1,5 +1,5 @@
-function [n] = binary2dec(i,j) % Recebe a parte inteira i, e a parte fracionária j e devolve o Número n.
-    %Checa se a função recebe dois valores, para o caso da parte fracionária=[0].
+function [n] = binary2dec(i,j) % receive the integer part i, and the fractionary part j , outputting the decimal number "n".
+    %Check if the function receives more than 1 value, in case [j]=0.
     format long;
     if nargin<2
         j=0;

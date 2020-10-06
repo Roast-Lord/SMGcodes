@@ -1,3 +1,5 @@
+%This code aplies the gauss-jordan method for a coeficient matrix "A", and a solution vector "b".
+%The code transforms the matrix "A" in to a upper triangular matrix and applies the RegressiveSubstitution of values.
 function [x] = Gauss(A,b)
     [NL,NC] = size(A);
     x = zeros(NL,1);
@@ -14,5 +16,5 @@ function [x] = Gauss(A,b)
         b(L)=b(L)-b(DIG)*PIVO;
     end
 end
-%X = SubstituicAoRegressivA(A,b)
+%x = RegressiveSubstitution(A,b)
 end

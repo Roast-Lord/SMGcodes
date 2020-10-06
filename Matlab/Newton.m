@@ -1,3 +1,4 @@
+%Apllies the Newton method to find zeros of a function,
 clear all;
 close all;
 home;

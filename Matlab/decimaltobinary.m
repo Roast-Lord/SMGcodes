@@ -1,3 +1,4 @@
+% This code is not yet finished.
 function [n] = decimaltobinary(x)
 format long;    
 y=x;
