@@ -2,8 +2,8 @@
 clear all;
 close all;
 home;
-F = inline('8.0 - (4.5)*(x-sin(x))');
-dF = inline('-4.5*(1-cos(x))');
+F = inline('8.0 - (4.5)*(x-sin(x))'); %function
+dF = inline('-4.5*(1-cos(x))'); % derivative
 
 x0 = 2.5;
 imax = 100;
