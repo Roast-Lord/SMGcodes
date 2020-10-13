@@ -1,4 +1,3 @@
 import numpy as np
-import math
-a = np.arange(6)
-print(a)
+numbers = np.array([[0,1,2],[3,4,5]])
+print(numbers)
