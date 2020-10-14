@@ -3,6 +3,7 @@
 function [s] = Gauss(mc,ms)
     [nl,nc] = size(mc);
     s = zeros(nl,1)
+    [mc,ms] = pivotation(mc,ms);
     for i = 1:nl
         for j = (i+1):nl
             pivot = mc(j,i)/mc(i,i);
