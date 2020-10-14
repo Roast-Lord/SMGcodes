@@ -2,7 +2,7 @@
 %The code transforms the matrix "ms" in to a upper triangular matrix and applies the regressivesub of values.
 function [s] = Gauss(mc,ms)
     [nl,nc] = size(mc);
-    s = zeros(nl,1)
+    s = zeros(nl,1);
     [mc,ms] = pivotation(mc,ms);
     for i = 1:nl
         for j = (i+1):nl
