@@ -1,4 +1,5 @@
 %Make a permutation in a given coeficient and solution vector A,B
+%The condition is that the principal diagonal can never be zero.
 function [A2,B2] = pivotation(A,B)
     [nl,nc] = size(A);
     tol = 10^(-4);
