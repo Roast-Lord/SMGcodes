@@ -26,5 +26,4 @@ n = [];
     disp(u)
     m = u - y;
     disp(m)
-    
-    end
+end
