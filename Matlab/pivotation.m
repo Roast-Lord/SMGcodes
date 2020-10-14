@@ -24,6 +24,7 @@ function [A2,B2] = pivotation(A,B)
                 end
             end
         end
-        A2 = A;
-        B2 = B;
     end
+    A2 = A;
+    B2 = B;
+end
