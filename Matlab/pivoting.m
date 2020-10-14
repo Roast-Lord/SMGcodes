@@ -1,11 +1,12 @@
-%Make a permutation in a given coeficient and solution vector A,B
+%Make a permutations in a given coeficient matrix A and a solution vector B.
 %The condition is that none of the values of the principal diagonal can be zero.
-function [A2,B2] = pivotation(A,B)
+%This code ony works for matrciez where i = j.
+function [A2,B2] = pivoting(A,B)
     [nl,nc] = size(A);
     tol = 10^(-4);
     for i = 1:nl
-        if(A(i,i) <= tol)
-            for (j = 1:nc)
+        if(A(i,i) < tol)
+            for (j = 1:nl)
                 if(i+1<nl)
                     aux(1,j) = A(i,j); 
                     A(i,j) = A(1,1);
