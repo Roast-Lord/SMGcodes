@@ -5,6 +5,4 @@ k = vec1*vec2
 print("\n",vec1)
 print("\n",vec2)
 print("\n",k)
-
-
-
+print(np.det(vec1))
