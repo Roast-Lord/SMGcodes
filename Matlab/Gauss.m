@@ -3,12 +3,12 @@
 function [s] = gauss(mc,ms)
     [nl,nc] = size(mc);
     s = zeros(nl,1);
-    tol = 10^(-4);
+    tol = 10^(-3);
     for i = 1:nl
         for j = (i+1):nl
             pivo = mc(i,i);
             if(pivo < tol)
-                [mc,ms] = pivoting2(mc,ms,i);
+                [mc,ms] = brah(mc,ms,i);
                 pivo = mc(i,i);
             end
             pivot = mc(j,i)/pivo;
