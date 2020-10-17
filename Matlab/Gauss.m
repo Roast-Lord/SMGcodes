@@ -7,10 +7,10 @@ function [s] = gauss(mc,ms)
     for i = 1:nl
         for j = (i+1):nl
             pivo = mc(i,i);
-            if(pivo < tol)
-                [mc,ms] = brah(mc,ms,i);
-                pivo = mc(i,i);
-            end
+            %if(pivo < tol)
+                %[mc,ms] = pivoting(mc,ms,i);
+                %pivo = mc(i,i);
+            %end
             pivot = mc(j,i)/pivo;
             for k=1:nc
                 mc(j,k) = mc(j,k) - mc(i,k)*pivot; 
