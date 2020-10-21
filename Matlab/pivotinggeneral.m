@@ -5,11 +5,11 @@ k = 0;
     else
         d = 0;
         [nl, nc] = size(A);
-        tol = 10^(-3);
+        tol = 10^(-4);
 
         for (i = 1:nl)
 
-            if (A(i, i) < tol)
+            if (abs(A(i,i)) < tol)
 
                 for (k = 1:nl)
 
@@ -19,14 +19,15 @@ k = 0;
 
                             for (j = 1:nc)
                                 d = 1;
-                                aux(1, j) = A(i, j);
-                                A(i,j) = A(k+i, j);
-                                A(k+i, j) = aux(1,j);
+                                aux(1,j) = A(i,j);
+                                A(i,j) = A(k+i,j);
+                                A(k+i,j) = aux(1,j);
                             end
 
                             aux2 = B(i);
                             B(i) = B(i+1);
                             B(i+1) = aux2;
+                            break
                         end
 
                     end
@@ -52,6 +53,8 @@ k = 0;
                     aux2 = B(i);
                     B(i) = B(x);
                     B(x) = aux2;
+                    break
+                  
                 end
 
             end
