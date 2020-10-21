@@ -3,14 +3,15 @@
 function [s] = gauss(mc,ms)
     [nl,nc] = size(mc);
     s = zeros(nl,1);
-    tol = 10^(-3);
+    tol = 10^(-4);
+    %[mc,ms] = pivotinggeneral(mc,ms);
     for i = 1:nl
         for j = (i+1):nl
             pivo = mc(i,i);
-            %if(pivo < tol)
-                %[mc,ms] = pivoting(mc,ms,i);
-                %pivo = mc(i,i);
-            %end
+            if(abs(pivo) < tol)
+                [mc,ms] = pivoting(mc,ms,i);
+                pivo = mc(i,i);
+            end
             pivot = mc(j,i)/pivo;
             for k=1:nc
                 mc(j,k) = mc(j,k) - mc(i,k)*pivot; 

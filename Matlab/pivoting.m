@@ -5,7 +5,7 @@ function [A2, B2] = pivoting(A, B, i)
     else
         d = 0;
         [nl, nc] = size(A);
-        tol = 10^(-3);
+        tol = 10^(-4);
 
         for (k = 1:nl)
 

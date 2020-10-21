@@ -9,7 +9,7 @@
             "type": "OctaveDebugger",
             "request": "launch",
             "name": "Function or file to execute.",
-            "program": "\\users\\Siloe_000\\Documents\\Codes\\SMGcodes\\Matlab\\pivotinggeneral.m",
+            "program": "\\users\\Siloe_000\\Documents\\Codes\\SMGcodes\\Matlab\\gauss.m",
             "octave": "octave-cli",
             "sourceFolder": "${workspaceFolder}",
             "autoTerminate": true
