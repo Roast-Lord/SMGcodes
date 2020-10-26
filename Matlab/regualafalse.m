@@ -1,13 +1,10 @@
-clear all;
-close all;
-home;
 
 %definir a função a ser zerada
 
-F = inline('8.0 - (4.5)*(x-sin(x))');
+F = inline('x^2 - exp(-x)');
 %intervalo
-a = 2;
-b = 3;
+a = 0;
+b = 1;
 %Num maximo de interaçoes
 imax = 100;
 %tolerancia na busca
