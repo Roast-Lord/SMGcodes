@@ -4,7 +4,7 @@ function [x] = secante(F,a,b)
     tol = 10^(-5);
     for i = 1:imax
         x = b - F(b)*(a-b)/(F(a)-F(b));
-        fprintf('b_%i = %1.6f\na_%i = %1.6f\nf(a_%i) = %1.6f\nf(b_%i) = %1.6f\nx_%i = %1.6f\n\n',i,b,i,a,i,F(a),i,F(b),i,x);
+        fprintf('x_%i = %1.6f\nx_%i = %1.6f\nf(x_%i) = %1.6f\nf(x_%i) = %1.6f\nx_%i = %1.6f\n\n',i+1,b,i,a,i,F(a),i+1,F(b),i+2,x);
         if(abs((x-b)/b) < tol)
             break
         end

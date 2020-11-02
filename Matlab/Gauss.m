@@ -10,10 +10,15 @@ function [s] = gauss(mc,ms)
             pivo = mc(i,i);
             pivot = mc(j,i)/pivo;
             for k=1:nc
-                mc(j,k) = mc(j,k) - mc(i,k)*pivot; 
+                mc(j,k) = mc(j,k) - mc(i,k)*pivot;
             end
             ms(j) = ms(j) - ms(i)*pivot;
+            disp(pivot)
+        fprintf('\n');
+        disp(ms)
+        fprintf('\n');
         end
+        
     end
     s = regressivesub(mc,ms);
 end

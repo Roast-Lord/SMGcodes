@@ -7,6 +7,6 @@ function s = regressivesub(mc,ms)
         for j = 1:nc
             aux += mc(i,j)*s(j);
         end
-        s(i) = (ms(i)-aux)/mc(i,i);
+        s(i) = round((ms(i)-aux)/mc(i,i));
     end
 end
