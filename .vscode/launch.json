@@ -4,7 +4,27 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "SMGcodes_da71a8ea"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickStart",
+            "request": "launch",
+            "mainClass": "Java.QuickStart",
+            "projectName": "SMGcodes_da71a8ea"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hello",
+            "request": "launch",
+            "mainClass": "Java.Hello",
+            "projectName": "SMGcodes_da71a8ea"
+        },
         {
             "type": "OctaveDebugger",
             "request": "launch",
