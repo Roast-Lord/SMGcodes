@@ -1,10 +1,10 @@
 function [B1,A1]=fourierplot(t1,t2,N)
     function y=f(t)
-     //  if   (t<0) y =-1;
-     //   else       y =+1;
-     //   end
-     //
-       y=abs(t/2);
+       // if   (t<0) y =-1;
+        //else       y =+1;
+        //end
+     
+      y=t/2;
     endfunction
     
     function y1=fcos(t)

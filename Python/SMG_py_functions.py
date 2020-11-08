@@ -1,4 +1,4 @@
-def Densityair(h): #Função que calcula a densidade do ar dada uma altura "h".
+def densityair(h): #Função que calcula a densidade do ar dada uma altura "h".
     
     p0 = 101.325e3
     L = 0.0065

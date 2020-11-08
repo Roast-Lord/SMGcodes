@@ -18,8 +18,8 @@ function plot_polos_zeros(wc,Hs)
 endfunction
 
 
-function plot_polos_zeros2(Hs)
-   N=1024;    
+function [poles,zers] = plot_polos_zeros2(Hs)
+   N=2024;    
    angle = linspace(0, 2*%pi, N);
    // raízes do denominador normalizadas por wc
    poles=roots(Hs(3))
@@ -27,7 +27,7 @@ function plot_polos_zeros2(Hs)
    zers=roots(Hs(2))
    plot2d(cos(angle),sin(angle)); //círculo unitário
    xtitle('Posição dos polos e zeros');
-   plot2d(real(poles),imag(poles),-2)
-   plot2d(real(zers),imag(zers),-9)
+   plot2d(real(poles),imag(poles),-20)
+   plot2d(real(zers),imag(zers),-15)
    xgrid()
 endfunction
