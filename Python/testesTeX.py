@@ -1,9 +1,9 @@
 import numpy as np
 import math
 import sympy as sp
-from SMG_PythonTeX_functions import printm
-from fractions import Fraction
-from decimal import Decimal
+from SMG_pythontex_functions import printm
+
+
 
 x = sp.symbols('x')
 y = sp.symbols('y')
@@ -17,11 +17,7 @@ J = myMatrix2*myMatrix
 
 matrix = np.array([[3.1415,15,0.5],[76,0.75,40],[0.1,12,0.4]])
 
-printm(matrix,t = '')
+printm(matrix,'rat','')
 
-
-
-
-            
 
 

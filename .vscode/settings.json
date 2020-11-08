@@ -1,4 +1,11 @@
 {
     "python.pythonPath": "C:\\Users\\Siloe_000\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-    "cSpell.language": "pt,pt-PT"
+    "cSpell.language": "pt,pt-PT",
+    "cSpell.ignoreWords": [
+        "functions",
+        "pythontex",
+        "smg",
+        "smg pythontex functions"
+    ],
+    "workbench.colorTheme": "Hyper Term Black"
 }
