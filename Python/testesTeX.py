@@ -17,7 +17,7 @@ J = myMatrix2*myMatrix
 
 matrix = np.array([[3.1415,15,0.5],[76,0.75,40],[0.1,12,0.4]])
 
-printm(matrix,'rat','')
+printm(matrix,2)
 
 
 
