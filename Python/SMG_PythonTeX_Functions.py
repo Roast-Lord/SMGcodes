@@ -43,3 +43,8 @@ def printm(m, k='4', t='b'):
     print(matrix_style)
 # -----------------------------------------------------
 
+def plotgraph2d(f,samples = 1,interval=1):
+    
+    print(r"\begin{tikizpicture}")
+    
+    print(r"\end{tikizpicture}")
