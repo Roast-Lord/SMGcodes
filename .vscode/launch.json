@@ -29,7 +29,7 @@
             "type": "OctaveDebugger",
             "request": "launch",
             "name": "Function or file to execute.",
-            "program": "\\users\\Siloe_000\\Documents\\Codes\\SMGcodes\\Matlab\\pdec.m",
+            "program": "\\users\\Siloe_000\\Documents\\Codes\\SMGcodes\\Matlab\\lagrangepoly.m",
             "octave": "octave-cli",
             "sourceFolder": "${workspaceFolder}",
             "autoTerminate": true
