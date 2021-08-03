@@ -18,7 +18,7 @@ g = 32.174;
 T = 993;
 mi =  0.4;
 mi2 = 0.02;
-CLMAX2 = 1.4;
+CLMAX2 = 1.4; oi
 
 %Distancia aproximada de pouso
 
